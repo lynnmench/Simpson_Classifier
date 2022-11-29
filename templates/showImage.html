@@ -1,0 +1,24 @@
+<!-- Author: Lynn Mencaca -->
+<!-- Date: 28Nov2022 -->
+<!-- Resource: Krish Naik Live Project Playlist -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrapped Images</title>
+</head>
+<body>
+<div class="table-users">
+   <div class="header">Some of the scrapped images:</div>
+    <table>
+{% for user_image in user_images %}
+        <td width="400">
+            <img width="300" height="300" scr="{{ url_for('static', filename=user_image) }}" alt="User Image"></td>
+{% endfor %}
+    </table>
+</div>
+</body>
+</html>
+
+
