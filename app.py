@@ -21,8 +21,8 @@ The purpose of this file is to
 # Importing the necessary Libraries
 from flask_cors import CORS,cross_origin
 from flask import Flask, render_template, request,jsonify
-#from scrapperImage.ScrapperImage import ScrapperImage
-#from businesslayer.BusinessLayerUtil import BusinessLayer
+from ImageScraper import ScrapperImage
+from businesslayer.BusinessLayerUtil import BusinessLayer
 import os
 
 data_file_path = '/Users/lynnpowell/Documents/DS_Projects/Simpson_Classification/'
@@ -53,7 +53,31 @@ def displayImages():
         print("No images found",e)
         return "Please try with a different search keyword"
 
-
+@app.route('/searchImages',methods=['Get','POST'])
+def searchImage():
+    if request.method=="POST":
+        search_term=request.form['keyword'] # assigning the value of the input keyword to the variable keyword
+        
+    else:
+        print("Please enter something")
+    
+    imagescrapperutil=BusinessLayer ## Instantiate a object for ScrapperImage Class
+    imagescrapper=ScrapperImage()
+    list_images=os.listdir('static')
+    imagescrapper.delete_downloaded_images(list_images)## Delete the old images before search
+    
+    image_name=search_term.split()
+    image_name="+".join(image_name)
+    
+    ## We need to add the header metadata
+    
+    header={
+        'User-Agent':"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"
+            
+            }
+    lst_images=imagescrapperutil.downloadImages(search_term,header)
+    
+    return displayImages() # redirect the control to the show images method
 
 
 
