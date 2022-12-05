@@ -30,7 +30,7 @@ import os
 
 image_file_path = '/Users/lynnpowell/Documents/DS_Projects/Data_Files/Simpson_Images/'
 
-def generate_negative_description_file():
+def generate_negative_homer_file():
     # open the output file for writing.
     # will overwrite all existing data in there
     with open('homer_neg.txt','w') as f:
@@ -43,9 +43,19 @@ def generate_negative_description_file():
                 f.write(image_file_path+folder+filename+'\n')
 
 
+def generate_negative_img_file():
+    with open('neg_image_file_lst.txt','w') as f:
+        #loop over all the file names
+        neg_image_folder_path = image_file_path + 'neg_image'        
+        
+        for filename in os.listdir(neg_image_folder_path):
+            f.write(neg_image_folder_path + '/' +filename+'\n')
+
 
 
 if __name__ == '__main__':
-    generate_negative_description_file()
+    
+    # file is save at: /Users/lynnpowell/Documents/DS_Projects/Simpson_Classifier
+    generate_negative_img_file()
 
 
