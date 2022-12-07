@@ -29,7 +29,7 @@ app = Flask(__name__)
 #    return "Hello World!"
 
 
-@app.route('/classify_image', methods = ['GET', 'POST'])
+@app.route('http://192.168.1.253:5000/classify_image', methods = ['GET', 'POST'])
 def classify_image():
     image_data = request.form['image_data']
     

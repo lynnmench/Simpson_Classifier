@@ -8,7 +8,7 @@ Author: Lynn Menchaca
 
 Resources:
     - Youtube channel: Learn Code By Gaming -> Training a Cascade classifier - OpenCV Object Detection in Games #8
-    https://www.youtube.com/watch?v=XrCAvs9AePM
+        https://www.youtube.com/watch?v=XrCAvs9AePM
     - OpenCV - Open Source Computer Vision
         https://docs.opencv.org/3.4/dc/d88/tutorial_traincascade.html
     
