@@ -148,20 +148,6 @@ def cropped_image(image_path, image_base64_data):
     
     cropped_face = []
     
-    """
-    for (x,y,w,h) in face_detect:
-        face_img = cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
-        
-        roi_gray = gray[y:y+h, x:x+w]
-        roi_color = face_img[y:y+h, x:x+w]
-        cropped_face.append(roi_color)
-        
-        #face_img = cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
-
-        plt.imshow(roi_color)
-        plt.show()
-    """
-    
     face_img = cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
     roi_gray = gray[y:y+h, x:x+w]
     roi_color = face_img[y:y+h, x:x+w]
