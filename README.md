@@ -1,6 +1,8 @@
 ![Screenshot](Simpson_Classifier_Webpage_Start.jpg)
 
+
 Author: Lynn Menchaca
+
 Start Date: 28Nov2022
 
 # Simpson Character Classifier
