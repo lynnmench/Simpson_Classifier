@@ -105,5 +105,4 @@ Server used is xampp.
 ### Project Improvement
 Given more time I would finish deploying the webpage. 
 
-![image](https://user-images.githubusercontent.com/60009141/206323156-6fadcb0d-b9fa-41ad-816e-8fea09b20c78.png)
 
