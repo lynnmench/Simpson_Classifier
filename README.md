@@ -6,7 +6,7 @@ Author: Lynn Menchaca
 Start Date: 28Nov2022
 
 # Simpson Character Classifier
-The purpose of this project is to identify Simpson characters from an image.
+The purpose of this project is to identify which Simpson characters is in an image.
 
 #### -- Project Status: Active
 
@@ -17,9 +17,15 @@ Hutson-Hacks -> Automating Google Chrome to Scrape Images with Selenium and Pyth
 
 Youtube channel: Learn Code By Gaming -> Training a Cascade classifier - OpenCV Object Detection in Games #8
         https://www.youtube.com/watch?v=XrCAvs9AePM
+        
+Youtube channel: codebasics -> Data Science Project|Machine Learning Project|Sports Celebrity Image Classification
+        https://www.youtube.com/playlist?list=PLeo1K3hjS3uvaRHZLl-jLovIjBP14QTXc
 
 OpenCV - Open Source Computer Vision
         https://docs.opencv.org/3.4/dc/d88/tutorial_traincascade.html
+        
+OpenCV-Python Tutorials -> Face Detection using Haar Cascades 
+        https://opencv24-python-tutorials.readthedocs.io/en/latest/py_tutorials/py_objdetect/py_face_detection/py_face_detection.html
 
 
 
@@ -35,7 +41,8 @@ OpenCV - Open Source Computer Vision
 ### Machine Learning Models
 * Logistic Regression
 * Random Forest
-* K-Nearest Neighbors
+* Support Vector Machine (SVM)
+* GridSearchCV - Hypertuning
 
 ### Project Outline
 1)	Web scrape Simpson character images
@@ -89,7 +96,7 @@ UI/app.css
 UI/app.html
 UI/app.js
 
-
+Server used is xampp.
 
 ### Results
 
